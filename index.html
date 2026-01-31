@@ -49,6 +49,10 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 /* ===== MAIN ===== */
 main {
     max-width: 900px;
@@ -171,8 +175,7 @@ footer {
     <h2>Cheat Codes</h2>
 
     <div class="cheat-note">
-        ⚠️ For GameShark or emulators (Project64, Mupen64Plus).  
-        ROM version compatibility may vary.
+        ⚠️ For GameShark or emulators (Project64, Mupen64Plus). ROM version compatibility may vary.
     </div>
 
     <h3>Widescreen (16:9)</h3>
@@ -199,6 +202,118 @@ D11A3E42 0054
 812F857A 0000
 812F8C26 0000
     </div>
+
+    <h3>Throw Toad Outside</h3>
+    <button class="copy-btn" onclick="copyCheat('toad')">Copy Code</button>
+    <div class="cheat-box" id="toad">
+8134209C 8019
+8134209E 56A4
+813420C4 8015
+813420C6 B690
+80342207 00FF
+803421B9 0000
+803421BB 0002
+81342116 0449
+81342256 F3B4
+8134225E F3B4
+8034225B 0001
+    </div>
+
+    <h3>Throw King Thwomp in Whomp's Fortress</h3>
+    <button class="copy-btn" onclick="copyCheat('thwomp')">Copy Code</button>
+    <div class="cheat-box" id="thwomp">
+8134573E E15C
+81345764 8013
+81345766 9E70
+81345754 3F80
+81345758 3F80
+8134575C 3F80
+    </div>
+
+    <h3>Throw Peach Outside the Castle</h3>
+    <button class="copy-btn" onclick="copyCheat('peach')">Copy Code</button>
+    <div class="cheat-box" id="peach">
+81341C56 0449
+80341BDD 0019
+81341BDE 4690
+81341C04 8013
+81341C06 9360
+80341D47 00FF
+80341CF9 0000
+80341CFB 0002
+81341D96 F3B4
+81341D9E F3B4
+80341D9B 0001
+    </div>
+
+    <h3>Fire Mario</h3>
+    <div class="cheat-note">
+        ⚠️ Ignore the YE button and don't press B too much or the game may crash.
+    </div>
+    <button class="copy-btn" onclick="copyCheat('fire')">Copy Code</button>
+    <div class="cheat-box" id="fire">
+8133D2DE 0001
+80330E94 0003
+812CB2CC 8724
+812CB2CE 2448
+812CB2B8 3C0B
+812CB2BA 8034
+812CB2BC 8D6C
+812CB2BE D3D0
+812CB2C0 856B
+812CB2C2 D3D4
+812CB2A6 4000
+812CB2E4 2404
+812CB2E6 0090
+812CB2E8 2405
+812CB2EA 0008
+812CB2EC 3C06
+812CB2EE 8034
+812CB2F0 0C0B
+812CB2F2 59B0
+812CB2F4 24C6
+812CB2F6 D3E0
+8133D3E0 5945
+812CB2F8 1000
+812CB2FA 0022
+8133D3D2 1168
+8133D3D0 1300
+8133D3D4 0000
+8133D3D8 0000
+8107EC38 8C8C
+8107EC3A 8C00
+8107EC40 FFFF
+8107EC42 FF00
+8107EC3C 8C8C
+8107EC3E 8C00
+8107EC44 FFFF
+8107EC46 FF00
+8107EC80 8160
+8107EC82 3C00
+8107EC88 FCBF
+8107EC8A 7900
+8107EC84 8160
+8107EC86 3C00
+8107EC8C FCBF
+8107EC8E 7900
+8107EC50 7F7F
+8107EC52 7F00
+8107EC58 FFFF
+8107EC5A FF00
+8107EC54 7F7F
+8107EC56 7F00
+8107EC5C FFFF
+8107EC5E FF00
+8107EC20 B300
+8107EC22 0000
+8107EC28 FF00
+8107EC2A 0000
+8107EC24 B300
+8107EC26 0000
+8124EAF8 2400
+8124EAFC 2400
+    </div>
+
 </section>
 
 <section id="credits">
