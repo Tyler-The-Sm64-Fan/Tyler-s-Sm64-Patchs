@@ -16,30 +16,33 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Segoe Print Web", "Segoe UI", Verdana, Arial, sans-serif;
-    background: linear-gradient(to bottom, #dcdcdc, #bfbfbf);
+    background: linear-gradient(to bottom, #e1e6eb, #b9c3cc);
     color: #000;
 }
 
 /* ===== HEADER ===== */
 header {
-    background: linear-gradient(#004a99, #002b66);
+    background: linear-gradient(#005ecb 0%, #003b80 50%, #00224d 100%);
     color: #fff;
     padding: 22px;
     text-align: center;
-    border-bottom: 4px solid #001a3d;
+    border-bottom: 4px solid #001126;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
 }
 
 header h1 {
     margin: 0;
     font-size: 30px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 /* ===== NAV ===== */
 nav {
-    background: linear-gradient(#eeeeee, #cfcfcf);
+    background: linear-gradient(to bottom, #ffffff 0%, #e2e2e2 50%, #cbcbcb 100%);
     padding: 10px;
-    border-bottom: 2px solid #999;
+    border-bottom: 2px solid #777;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
 nav a {
@@ -47,86 +50,130 @@ nav a {
     text-decoration: none;
     color: #003366;
     font-weight: bold;
+    text-shadow: 1px 1px 0px #fff;
 }
 
 nav a:hover {
     text-decoration: underline;
+    color: #005ecb;
 }
 
 /* ===== MAIN ===== */
 main {
     max-width: 900px;
-    margin: 20px auto;
-    background: linear-gradient(#ffffff, #f2f2f2);
-    border: 2px solid #aaa;
+    margin: 25px auto;
+    background: #ffffff;
+    border: 1px solid #999;
+    border-radius: 8px;
     padding: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
 }
 
 section {
     margin-bottom: 35px;
-    background: linear-gradient(#f9f9f9, #e6e6e6);
-    padding: 15px;
-    border: 1px solid #bbb;
+    background: linear-gradient(to bottom, #ffffff 0%, #f1f4f7 100%);
+    padding: 18px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 0 #fff;
 }
 
 h2 {
     color: #003366;
-    border-bottom: 2px solid #aaa;
+    border-bottom: 2px solid #005ecb;
+    padding-bottom: 4px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
 /* ===== DOWNLOADS ===== */
 .download-box {
     background: #fff;
-    border: 1px solid #999;
-    padding: 12px;
+    border: 1px solid #b4c2d3;
+    border-radius: 5px;
+    padding: 15px;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.download-box a {
-    color: #003366;
+/* Blue 2009 Glossy Button Look */
+.dl-btn, .copy-btn {
+    display: inline-block;
+    background: linear-gradient(to bottom, #69a6eb 0%, #3a84df 50%, #1f64bd 51%, #246ec9 100%);
+    color: #fff !important;
     font-weight: bold;
     text-decoration: none;
+    padding: 7px 18px;
+    border: 1px solid #1d4d8c;
+    border-radius: 6px;
+    text-shadow: -1px -1px 0px rgba(0,0,0,0.4);
+    box-shadow: inset 0 1px 0px rgba(255,255,255,0.4), 0 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
-/* ===== CHEATS ===== */
+.dl-btn:hover, .copy-btn:hover {
+    background: linear-gradient(to bottom, #84b7f0 0%, #5397eb 50%, #2f7adc 51%, #3785e6 100%);
+    box-shadow: inset 0 1px 0px rgba(255,255,255,0.5), 0 3px 6px rgba(0,0,0,0.25);
+}
+
+.dl-btn:active, .copy-btn:active {
+    background: linear-gradient(to bottom, #1d5cb0 0%, #296ebf 100%);
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+    transform: translateY(1px);
+}
+
+/* ===== 2009 GLOSSY WARNING BAR ===== */
 .cheat-note {
-    background: #fff3cd;
-    border: 1px solid #e0c36a;
-    padding: 10px;
-    font-size: 13px;
-    margin-bottom: 15px;
+    background: linear-gradient(to bottom, #ffe8a1 0%, #ffd666 50%, #ffc42e 51%, #ffcd45 100%);
+    border: 1px solid #d49a00;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 0px #fff, 0 4px 8px rgba(0, 0, 0, 0.15); 
+    padding: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #523b00;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.warning-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.25));
 }
 
 .cheat-box {
-    background: #fff;
-    border: 1px solid #999;
-    padding: 10px;
-    margin-bottom: 10px;
+    background: #fafafa;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 12px;
     font-family: Consolas, monospace;
     white-space: pre-line;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.08);
 }
 
 .copy-btn {
-    background: linear-gradient(#4a90e2, #2f6fb8);
-    color: white;
-    border: 1px solid #1f4f88;
-    padding: 4px 10px;
-    font-size: 12px;
-    cursor: pointer;
+    padding: 4px 12px;
+    font-size: 13px;
     margin-bottom: 6px;
-}
-
-.copy-btn:hover {
-    background: linear-gradient(#5aa0f0, #3b7fd1);
 }
 
 /* ===== FOOTER ===== */
 footer {
-    background: linear-gradient(#d6d6d6, #bdbdbd);
-    border-top: 3px solid #999;
+    background: linear-gradient(to bottom, #eaeaea, #b5b5b5);
+    border-top: 2px solid #888;
     text-align: center;
     padding: 15px;
     font-size: 13px;
+    text-shadow: 1px 1px 0px #fff;
 }
 </style>
 </head>
@@ -149,35 +196,48 @@ footer {
 
 <section id="about">
     <h2>About</h2>
-    <p>Fan-made patches for <strong>Super Mario 64</strong>. You must own the original game to use these.</p>
+    <p>Fan-made patches for <strong>Super Mario 64</strong>. You must own the original game to use these files.</p>
+    
+    <h3>Why do all the ZIP files contain BPS patches?</h3>
+    <p>All the downloadable ZIP files on this page contain <strong>.BPS patch files</strong> inside them instead of full ROMs. Sharing pre-patched raw Nintendo ROMs violates copyright laws. A BPS file only holds the custom code changes you need. You just need to extract the ZIP, take out the BPS file, and apply it to your own original Super Mario 64 USA ROM using an online patcher like RomPatcher.js!</p>
 </section>
 
 <section id="downloads">
     <h2>Downloads</h2>
 
     <div class="download-box">
-        <strong>Giant Mario 64</strong><br>
-        <a href="https://www.mediafire.com/file/yz5qax5p3womqec/Giant+Mario+64.zip/file" target="_blank">Download ZIP</a>
+        <span><strong>Giant Mario 64</strong></span>
+        <a href="https://www.mediafire.com/file/yz5qax5p3womqec/Giant+Mario+64.zip/file" target="_blank" class="dl-btn">Download ZIP</a>
     </div>
 
     <div class="download-box">
-        <strong>Super Blue Mario 64</strong><br>
-        <a href="https://www.mediafire.com/file/2rdtg2s7p3ge90i/Super+Blue+Mario+64.zip/file" target="_blank">Download ZIP</a>
+        <span><strong>Super Blue Mario 64</strong></span>
+        <a href="https://www.mediafire.com/file/2rdtg2s7p3ge90i/Super+Blue+Mario+64.zip/file" target="_blank" class="dl-btn">Download ZIP</a>
     </div>
 
     <div class="download-box">
-        <strong>Super Luigi 64</strong><br>
-        <a href="https://www.mediafire.com/file/mr43axsc0j1fc4z/Super_Luigi_64_%2528USA%2529.zip/file" target="_blank">Download ZIP</a>
+        <span><strong>Super Luigi 64</strong></span>
+        <a href="https://www.mediafire.com/file/mr43axsc0j1fc4z/Super_Luigi_64_%2528USA%2529.zip/file" target="_blank" class="dl-btn">Download ZIP</a>
     </div>
 
     <div class="download-box">
-        <strong>Waiter Toad 64</strong><br>
-        <a href="https://www.mediafire.com/file/xe4vpgnb9iy7wrx/Waiter+Toad+64.bps/file" target="_blank">Download BPS</a>
+        <span><strong>Super Wario 64</strong></span>
+        <a href="https://www.mediafire.com/file/maqout1n7e3y1rj/Super+Wario+64.zip/file" target="_blank" class="dl-btn">Download ZIP</a>
     </div>
 
     <div class="download-box">
-        <strong>VL-TONE Luigi Hack</strong><br>
-        <a href="https://www.mediafire.com/file/lk3vqs2uzb65n4r/VL-TONE+Luigi.bps/file" target="_blank">Download BPS</a>
+        <span><strong>Small Mario</strong></span>
+        <a href="https://www.mediafire.com/file/jcyo630lhnscfne/Small_Mario.zip/file" target="_blank" class="dl-btn">Download ZIP</a>
+    </div>
+
+    <div class="download-box">
+        <span><strong>Waiter Toad 64</strong></span>
+        <a href="https://www.mediafire.com/file/ahd7p2sa07oc4es/Waiter_Toad.zip/file" target="_blank" class="dl-btn">Download ZIP</a>
+    </div>
+
+    <div class="download-box">
+        <span><strong>VL-TONE Luigi Hack</strong></span>
+        <a href="https://www.mediafire.com/file/eeb7b57m7ep7b9p/VL-TONE_Luigi.zip/file" target="_blank" class="dl-btn">Download ZIP</a>
     </div>
 </section>
 
@@ -185,7 +245,25 @@ footer {
     <h2>Cheat Codes</h2>
 
     <div class="cheat-note">
-        ⚠️ For GameShark or emulators (Project64, Mupen64Plus). ROM version compatibility may vary.
+        <div class="warning-icon">
+            <svg width="30" height="28" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="gelRed" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#ff6b6b"/>
+                        <stop offset="45%" stop-color="#e32626"/>
+                        <stop offset="50%" stop-color="#b80909"/>
+                        <stop offset="100%" stop-color="#8a0000"/>
+                    </linearGradient>
+                    <filter id="bevelHighlight">
+                        <feDropShadow dx="0" dy="1" stdDeviation="0.5" flood-color="#ffffff" flood-opacity="0.6" result="blur"/>
+                    </filter>
+                </defs>
+                <path d="M12 1.5 L23.5 21 L0.5 21 Z" fill="url(#gelRed)" stroke="#5e0000" stroke-width="1.2"/>
+                <path d="M12 2.5 L21.5 19.5 L2.5 19.5 Z" fill="none" stroke="#ff9e9e" stroke-width="0.8" opacity="0.4"/>
+                <text x="12" y="17.5" fill="#ffffff" font-size="14" font-weight="900" font-family="'Segoe UI', Arial, sans-serif" text-anchor="middle" filter="url(#bevelHighlight)" style="text-shadow: 0px 2px 2px #4a0000;">!</text>
+            </svg>
+        </div>
+        <span>For GameShark or emulators (Project64, Mupen64Plus). ROM version compatibility may vary.</span>
     </div>
 
     <h3>Widescreen (16:9)</h3>
@@ -258,7 +336,14 @@ D11A3E42 0054
 
     <h3>Fire Mario</h3>
     <div class="cheat-note">
-        ⚠️ Ignore the YE button and don't press B too much or the game may crash.
+        <div class="warning-icon">
+            <svg width="30" height="28" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1.5 L23.5 21 L0.5 21 Z" fill="url(#gelRed)" stroke="#5e0000" stroke-width="1.2"/>
+                <path d="M12 2.5 L21.5 19.5 L2.5 19.5 Z" fill="none" stroke="#ff9e9e" stroke-width="0.8" opacity="0.4"/>
+                <text x="12" y="17.5" fill="#ffffff" font-size="14" font-weight="900" font-family="'Segoe UI', Arial, sans-serif" text-anchor="middle" filter="url(#bevelHighlight)" style="text-shadow: 0px 2px 2px #4a0000;">!</text>
+            </svg>
+        </div>
+        <span>Ignore the YE text and don't press B too much or the game may crash.</span>
     </div>
     <button class="copy-btn" onclick="copyCheat('fire')">Copy Code</button>
     <div class="cheat-box" id="fire">
